@@ -13,7 +13,7 @@ public enum Nation
     Dutch
 }
 
-public class faction : MonoBehaviour
+public class Faction : MonoBehaviour
 {
     [SerializeField] private Nation nation;
     public Nation Nation { get { return nation; } }
