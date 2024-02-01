@@ -4170,9 +4170,9 @@ GameObject:
   - component: {fileID: 6139667243047075492}
   - component: {fileID: 487621593022228696}
   - component: {fileID: 4376472813492621031}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Soilder
-  m_TagString: Untagged
+  m_TagString: Unit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
