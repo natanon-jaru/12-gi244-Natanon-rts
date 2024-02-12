@@ -32,6 +32,9 @@ public class Building : Structure
     {
         if (Input.GetKeyDown(KeyCode.G))
             ToCreateUnit(0);
+        
+        if (Input.GetKeyDown(KeyCode.T))
+            ToCreateUnit(1);
 
         if ((recruitList.Count > 0) && (recruitList[0] != null))
         {
