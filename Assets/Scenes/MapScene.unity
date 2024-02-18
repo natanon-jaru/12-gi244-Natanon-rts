@@ -198,6 +198,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7395328}
   m_CullTransparentMesh: 1
+--- !u!114 &44956462 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5067408546970915266, guid: ef5e8fd6db3abc745982ec8a56d1f24f, type: 3}
+  m_PrefabInstance: {fileID: 6805702633480514693}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85705b1cccbb5cc4f86d254078b26668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &110795860
 GameObject:
   m_ObjectHideFlags: 0
@@ -498,6 +509,10 @@ PrefabInstance:
       propertyPath: aliveBuildings.Array.data[0]
       value: 
       objectReference: {fileID: 1410495231}
+    - target: {fileID: 698025584487351201, guid: 8c7cf36792ef70a4ba2763ccd263788f, type: 3}
+      propertyPath: aliveBuildings.Array.data[1]
+      value: 
+      objectReference: {fileID: 44956462}
     - target: {fileID: 5851749237207816613, guid: 8c7cf36792ef70a4ba2763ccd263788f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 236.05338
@@ -2278,7 +2293,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4092135953349824, guid: 412bdc8a5a4df6142a07d1838deb4096, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.46972752
+      value: -21.65
       objectReference: {fileID: 0}
     - target: {fileID: 4092135953349824, guid: 412bdc8a5a4df6142a07d1838deb4096, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3125,7 +3140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 453744, guid: 0b0613031cc41e441b3436e62ff8a8eb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.11203933
+      value: -22.007689
       objectReference: {fileID: 0}
     - target: {fileID: 453744, guid: 0b0613031cc41e441b3436e62ff8a8eb, type: 3}
       propertyPath: m_LocalRotation.w
