@@ -136,6 +136,7 @@ MonoBehaviour:
   unitTimer: 0
   curUnitProgress: 0
   curUnitWaitTime: 0
+  isFuctional: 1
 --- !u!54 &31377863511775893
 Rigidbody:
   m_ObjectHideFlags: 0
