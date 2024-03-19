@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public struct StutureCost
+public struct StructureCost
 {
     public int food;
     public int wood;
@@ -58,11 +58,11 @@ public abstract class Structure : MonoBehaviour
 
 
     [SerializeField] 
-    private StutureCost stutureCost;
-    public StutureCost StutureCost
+    private StructureCost structureCost;
+    public StructureCost StructureCost
     {
-        get { return stutureCost; }
-        set { stutureCost = value; }
+        get { return structureCost; }
+        set { structureCost = value; }
     }
     
     // Start is called before the first frame update

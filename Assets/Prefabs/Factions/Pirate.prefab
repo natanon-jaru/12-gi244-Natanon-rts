@@ -128,6 +128,9 @@ MonoBehaviour:
   stone: 0
   aliveUnits: []
   aliveBuildings: []
+  unitsParent: {fileID: 3501870600598981994}
+  buildingsParent: {fileID: 4805523205849845124}
+  ghostBuildingParent: {fileID: 5886659744655922630}
 --- !u!1 &1171527368355230054
 GameObject:
   m_ObjectHideFlags: 0
