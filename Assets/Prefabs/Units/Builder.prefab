@@ -1178,7 +1178,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &405850
 Transform:
   m_ObjectHideFlags: 0
@@ -1408,7 +1408,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &472214
 Transform:
   m_ObjectHideFlags: 0
@@ -1635,13 +1635,14 @@ GameObject:
   - component: {fileID: 6647369650871969199}
   - component: {fileID: 7693314459593308601}
   - component: {fileID: 200793415835182206}
+  - component: {fileID: 7097299366015253500}
   m_Layer: 6
-  m_Name: Character_Female_Wench_01 1
+  m_Name: Builder
   m_TagString: Unit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &453744
 Transform:
   m_ObjectHideFlags: 0
@@ -1819,7 +1820,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 1
   unitName: Women
-  unitPic: {fileID: 21300000, guid: 701b5d3f47282aa4cabb3cc712cabb80, type: 3}
+  unitPic: {fileID: 21300000, guid: 9f6bfa58a20cacd41832cc7324ac7129, type: 3}
   curHP: 100
   maxHP: 100
   moveSpeed: 5
@@ -1837,8 +1838,31 @@ MonoBehaviour:
     gold: 0
     stone: 0
   unitWaitTime: 0.1
-  isBuilder: 0
+  isBuilder: 1
   builder: {fileID: 0}
+--- !u!114 &7097299366015253500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a057c59d1982ac42b43687c5edf8d1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toBuild: 0
+  showGhost: 0
+  buildingList:
+  - {fileID: 2875728194703374582, guid: db8a35cb70145d74688c69ed5cfdf5ce, type: 3}
+  - {fileID: 809920961174369033, guid: ef5e8fd6db3abc745982ec8a56d1f24f, type: 3}
+  ghostBuildingList:
+  - {fileID: 2875728194703374582, guid: ecc7d6965f4c54245beccf34d67868ac, type: 3}
+  - {fileID: 809920961174369033, guid: 31df110131a45bd44b9b6e2ac9e5258d, type: 3}
+  newBuilding: {fileID: 0}
+  ghostBuilding: {fileID: 0}
+  inProgressBuilding: {fileID: 0}
 --- !u!1 &129178
 GameObject:
   m_ObjectHideFlags: 0
@@ -2820,7 +2844,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &424960
 Transform:
   m_ObjectHideFlags: 0

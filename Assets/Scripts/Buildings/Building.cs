@@ -32,10 +32,10 @@ public class Building : Structure
     }
 
     //How deep into the fround the building is at the construction site
-    [SerializeField] private float intoGround = 5f;
+    [SerializeField] private float intoTheGround = 5f;
     public float InfoTheGround
     {
-        get { return intoGround; }
+        get { return intoTheGround; }
     }
     
     // Start is called before the first frame update
@@ -114,6 +114,7 @@ public class Building : Structure
         recruitList.RemoveAt(0);
 
         Unit unit = unitObj.GetComponent<Unit>();
+        unit.Faction = faction;
         unit.MoveToPosition(rallyPoint.position); //Go to Rally Point
 
         //Add unit into faction's Army

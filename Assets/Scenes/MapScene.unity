@@ -591,7 +591,7 @@ PrefabInstance:
     - target: {fileID: 3187586684623871518, guid: db8a35cb70145d74688c69ed5cfdf5ce, type: 3}
       propertyPath: unitPrefabs.Array.data[1]
       value: 
-      objectReference: {fileID: 128380, guid: 0b0613031cc41e441b3436e62ff8a8eb, type: 3}
+      objectReference: {fileID: 128380, guid: 3e7448c39a720814e8037956a7441e87, type: 3}
     - target: {fileID: 6547261880230267574, guid: db8a35cb70145d74688c69ed5cfdf5ce, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.93877864
@@ -1224,7 +1224,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 496003516}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1453464385}
+        m_TargetAssemblyTypeName: ActionManager, Assembly-CSharp
+        m_MethodName: CreateBuildingButton
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &496003516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1478,7 +1490,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 516818020}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1453464385}
+        m_TargetAssemblyTypeName: ActionManager, Assembly-CSharp
+        m_MethodName: CreateBuildingButton
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &516818020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2215,7 +2239,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 634726982}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1453464385}
+        m_TargetAssemblyTypeName: ActionManager, Assembly-CSharp
+        m_MethodName: CreateBuildingButton
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &634726982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3056,7 +3092,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 809251332}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1453464385}
+        m_TargetAssemblyTypeName: ActionManager, Assembly-CSharp
+        m_MethodName: CreateBuildingButton
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &809251332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3766,7 +3814,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 959062919}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1453464385}
+        m_TargetAssemblyTypeName: ActionManager, Assembly-CSharp
+        m_MethodName: CreateBuildingButton
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &959062919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4124,7 +4184,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 991318332}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1453464385}
+        m_TargetAssemblyTypeName: ActionManager, Assembly-CSharp
+        m_MethodName: CreateBuildingButton
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &991318332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4244,7 +4316,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 995669217}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1453464385}
+        m_TargetAssemblyTypeName: ActionManager, Assembly-CSharp
+        m_MethodName: CreateBuildingButton
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &995669217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4364,7 +4448,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1010270586}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1453464385}
+        m_TargetAssemblyTypeName: ActionManager, Assembly-CSharp
+        m_MethodName: CreateBuildingButton
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1010270586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4917,7 +5013,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1167516436}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1453464385}
+        m_TargetAssemblyTypeName: ActionManager, Assembly-CSharp
+        m_MethodName: CreateBuildingButton
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1167516436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5362,7 +5470,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1263980439}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1453464385}
+        m_TargetAssemblyTypeName: ActionManager, Assembly-CSharp
+        m_MethodName: CreateBuildingButton
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1263980439
 MonoBehaviour:
   m_ObjectHideFlags: 0
