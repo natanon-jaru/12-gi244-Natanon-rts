@@ -33,6 +33,15 @@ public class Faction : MonoBehaviour
     [SerializeField] private List<Building> aliveBuildings = new List<Building>();
     public List<Building> AliveBuildings { get { return aliveBuildings; } }
     
+    [SerializeField] private Transform unitsParent;
+    public Transform UnitsParent { get { return unitsParent; } }
+
+    [SerializeField] private Transform buildingsParent;
+    public Transform BuildingsParent { get { return buildingsParent; } }
+
+    [SerializeField] private Transform ghostBuildingParent;
+    public Transform GhostBuildingParent { get { return ghostBuildingParent; } }
+    
     // Start is called before the first frame update
     void Start()
     {
