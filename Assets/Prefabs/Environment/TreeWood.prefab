@@ -208,7 +208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rsrcName: Tree
-  rsrcPic: {fileID: 0}
+  rsrcPic: {fileID: 21300000, guid: ba310b9a2c3b25d4e9f437186dbc8535, type: 3}
   rsrcType: 1
   quantity: 100
   maxQuantity: 100
