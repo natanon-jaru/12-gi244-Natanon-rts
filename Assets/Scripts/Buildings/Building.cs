@@ -33,10 +33,15 @@ public class Building : Structure
 
     //How deep into the fround the building is at the construction site
     [SerializeField] private float intoTheGround = 5f;
-    public float InfoTheGround
+    public float IntoTheGround
     {
         get { return intoTheGround; }
     }
+    
+    private float timer = 0f; //Constructing timer
+    public float Timer { get { return timer; } set { timer = value; } }
+    private float waitTime = 0.5f; //How fast it will be construct, higher is longer
+    public float WaitTime { get { return waitTime; } set { waitTime = value; } }
     
     // Start is called before the first frame update
     void Start()
