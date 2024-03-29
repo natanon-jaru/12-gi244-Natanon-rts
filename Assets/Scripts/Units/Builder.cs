@@ -59,7 +59,7 @@ public class Builder : MonoBehaviour
         {
             //if mouse is over UI
             if (EventSystem.current.IsPointerOverGameObject())
-            return;
+               return;
             
             CheckClickOnGround();
         }
