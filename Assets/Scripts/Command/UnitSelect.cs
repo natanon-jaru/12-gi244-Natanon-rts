@@ -9,8 +9,8 @@ public class UnitSelect : MonoBehaviour
     private LayerMask layerMask;
 
     [SerializeField]
-    private Unit curUnit; //current selected single unit
-    public Unit CurUnit { get { return curUnit; } }
+    private List<Unit> curUnit = new List<Unit>(); //current selected single unit
+    public List<Unit> CurUnits { get { return CurUnits; } }
 
     private Camera cam;
     private Faction faction;
@@ -64,15 +64,15 @@ public class UnitSelect : MonoBehaviour
     
     private void SelectUnit(RaycastHit hit)
     {
-        curUnit = hit.collider.GetComponent<Unit>();
-
-        curUnit.ToggleSelectionVisual(true);
+        Unit unit = hit.collider.GetComponent<Unit>();
 
         Debug.Log("Selected Unit");
 
-        if (GameManager.instance.MyFaction.IsMyUnit(curUnit))
+        if (GameManager.instance.MyFaction.IsMyUnit(unit))
         {
-            ShowUnit(curUnit);
+            CurUnits.Add(unit);
+            unit.ToggleSelectionVisual(true);
+            ShowUnit(unit);
         }
     }
     private void TrySelect(Vector2 screenPos)
@@ -100,8 +100,8 @@ public class UnitSelect : MonoBehaviour
     
     private void ClearAllSelectionVisual()
     {
-        if (curUnit != null)
-            curUnit.ToggleSelectionVisual(false);
+        foreach (Unit u in CurUnits)
+            u.ToggleSelectionVisual(false);
         if (curBuilding != null)
             curBuilding.ToggleSelectionVisual(false);
         if (curResource != null)
@@ -111,7 +111,7 @@ public class UnitSelect : MonoBehaviour
     private void ClearEverything()
     {
         ClearAllSelectionVisual();
-        curUnit = null;
+        CurUnits.Clear();
         curBuilding = null;
         
         //ClearUI
