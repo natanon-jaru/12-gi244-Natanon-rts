@@ -76,17 +76,4 @@ public abstract class Structure : MonoBehaviour
     {
         
     }
-    
-    protected void Die()
-    {
-        InfoManager.instance.ClearAllInfo();
-        Destroy(gameObject);
-    }
-    public void TakeDamage(int damage)
-    {
-        curHP -= damage;
-        if (curHP <= 0)
-            Die();
-    }
-
 }
