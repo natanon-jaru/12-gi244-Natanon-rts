@@ -22,8 +22,7 @@ public class Turret : Building
     // Start is called before the first frame update
     void Start()
     {
-        unitLayerMask = LayerMask.GetMask("Unit");
-        InvokeRepeating("CheckForAttack",0f,0.5f);
+        
     }
 
     // Update is called once per frame
@@ -74,44 +73,6 @@ public class Turret : Building
         }
         else
             return null;
-    }
-    protected void ShootAtEnemy()
-    {
-        if (targetUnit != null)
-        {
-            Unit u = targetUnit.GetComponent<Unit>();
-
-            float dist = Vector3.Distance(transform.position, targetUnit.transform.position);
-
-            if (dist <= shootRange)
-                u.TakeDamage(this, shootDamage);
-        }
-        else //No enemy to attack
-        {
-            targetUnit = null;
-            state = TurretState.Idle;
-        }
-    }
-    private void CheckForAttack()
-    {
-        if (!IsFunctional || CurHP <= 0)
-            return;
-
-        Unit enemyUnit = CheckForNearbyEnemies();
-
-        if (enemyUnit != null)
-        {
-            targetUnit = enemyUnit.gameObject;
-            state = TurretState.Defending;
-        }
-        else //No unit to attack
-        {
-            targetUnit = null;
-            state = TurretState.Idle;
-        }
-
-        if (state == TurretState.Defending)
-            ShootAtEnemy();
     }
 
 }
