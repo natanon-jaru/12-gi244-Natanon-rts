@@ -31,18 +31,15 @@ public class UnitCommand : MonoBehaviour
         }
     }
     
-    private void UnitsMoveToPosition(Vector3 dest, List<Unit> units)
+    private void UnitsMoveToPosition(Vector3 dest, Unit unit)
     {
-        foreach (Unit u in units)
-        {
-            if (u != null)
-                u.MoveToPosition(dest);
-        }
+        if (unit != null)
+            unit.MoveToPosition(dest);
     }
     
-    private void CommandToGround(RaycastHit hit, List<Unit> units)
+    private void CommandToGround(RaycastHit hit, Unit unit)
     {
-        UnitsMoveToPosition(hit.point, units);
+        UnitsMoveToPosition(hit.point, unit);
         CreateVFXMarker(hit.point, MainUI.instance.SelectionMarker);
     }
     
@@ -57,11 +54,11 @@ public class UnitCommand : MonoBehaviour
             switch (hit.collider.tag)
             {
                 case "Ground":
-                    CommandToGround(hit, unitSelect.CurUnits);
+                    CommandToGround(hit, unitSelect.CurUnit);
                     break;
                 
                 case "Resource":
-                    ResourceCommand(hit, unitSelect.CurUnits);
+                    ResourceCommand(hit, unitSelect.CurUnit);
                     break;
             }
         }
@@ -76,20 +73,17 @@ public class UnitCommand : MonoBehaviour
     }
     
     // called when we command units to gather a resource
-    private void UnitsToGatherResource(ResourceSource resource, List<Unit> units)
+    private void UnitsToGatherResource(ResourceSource resource, Unit unit)
     {
-        foreach (Unit u in units)
-        {
-            if (u.IsWorker)
-                u.Worker.ToGatherResource(resource, resource.transform.position);
-            else
-                u.MoveToPosition(resource.transform.position);
-        }
+        if (unit.IsWorker)
+            unit.Worker.ToGatherResource(resource, resource.transform.position);
+        else
+            unit.MoveToPosition(resource.transform.position);
     }
     
-    private void ResourceCommand(RaycastHit hit, List<Unit> units)
+    private void ResourceCommand(RaycastHit hit, Unit unit)
     {
-        UnitsToGatherResource(hit.collider.GetComponent<ResourceSource>(), units);
+        UnitsToGatherResource(hit.collider.GetComponent<ResourceSource>(), unit);
         CreateVFXMarker(hit.transform.position, MainUI.instance.SelectionMarker);
     }
 }
