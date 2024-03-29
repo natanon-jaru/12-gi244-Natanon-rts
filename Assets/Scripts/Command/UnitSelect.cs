@@ -29,10 +29,6 @@ public class UnitSelect : MonoBehaviour
     private Vector2 oldAnchoredPos;//Box old anchored position
     private Vector2 startPos;//point where mouse is down
     
-    [SerializeField]
-    private Unit curEnemy;
-
-    
     void Awake()
     {
         faction = GetComponent<Faction>();
@@ -93,14 +89,6 @@ public class UnitSelect : MonoBehaviour
             unit.ToggleSelectionVisual(true);
             ShowUnit(unit);
         }
-
-        else
-        {
-            //Single Enemy
-            curEnemy = unit;
-            curEnemy.ToggleSelectionVisual(true);
-            ShowEnemyUnit(unit);
-        }
     }
     private void TrySelect(Vector2 screenPos)
     {
@@ -133,8 +121,6 @@ public class UnitSelect : MonoBehaviour
             curBuilding.ToggleSelectionVisual(false);
         if (curResource != null)
             curResource.ToggleSelectionVisual(false);
-        if (curEnemy != null)
-            curEnemy.ToggleSelectionVisual(false);
     }
     
     private void ClearEverything()
@@ -236,11 +222,6 @@ public class UnitSelect : MonoBehaviour
             }
         }
         selectionBox.sizeDelta = new Vector2(0, 0); //clear Selection Box's size;
-    }
-
-    private void ShowEnemyUnit(Unit u)
-    {
-        InfoManager.instance.ShowAllInfo(u);
     }
 
     
