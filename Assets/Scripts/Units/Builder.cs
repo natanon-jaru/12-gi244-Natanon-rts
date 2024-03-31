@@ -54,20 +54,18 @@ public class Builder : MonoBehaviour
     {
         if (unit.State == UnitState.Die)
             return;
-
-        if (Input.GetMouseButtonDown(0)) //Click to select a building site
-        {
-            //if mouse is over UI
-            if (EventSystem.current.IsPointerOverGameObject())
-               return;
-            
-            CheckClickOnGround();
-        }
-
+        
         if (toBuild) // if this unit is to build something
         {
             GhostBuildingFollowsMouse();
-
+            if (Input.GetMouseButtonDown(0)) //Click to select a building site
+            {
+                //if mouse is over UI
+                if (EventSystem.current.IsPointerOverGameObject()) 
+                    return;
+            
+                CheckClickOnGround();
+            }
             if (Input.GetKeyDown(KeyCode.Escape) || Input.GetMouseButtonDown(1))
                 CancelToBuild();
         }
