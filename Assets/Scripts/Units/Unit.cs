@@ -8,13 +8,14 @@ public enum UnitState
 {
     Idle,
     Move,
-    Attack,
+    AttackUnit,
     MoveToBuild, //builder goes to build
     BuildProgress, //builder builds in progress
     MoveToResource, // worker goes to resource
     Gather, //worker gather resource
     DeliverToHQ, //worker comes back
     StoreAtHQ, //worker gives resource to HQ
+    MoveToEnemy,
     Die
 }
 
