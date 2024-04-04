@@ -107,7 +107,6 @@ public class InfoManager : MonoBehaviour
         hpIcon.color = Color.white;
         hpTxt.text = $"{unit.CurHP}/{unit.MaxHP}";
     }
-    
     public void ShowEnemyAllInfo(Building b)
     {
         SetPic(b.StructurePic);
