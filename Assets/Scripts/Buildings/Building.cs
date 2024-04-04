@@ -30,22 +30,6 @@ public class Building : Structure
     {
         get { return isHQ; }
     }
-    
-    [SerializeField] private bool isHousing;
-
-    public bool IsHousing
-    {
-        get { return isHousing; }
-    }
-    
-    [SerializeField] private bool isBarrack;
-
-    public bool IsBarrack
-    {
-        get { return isBarrack; }
-    }
-    
-    
 
     //How deep into the fround the building is at the construction site
     [SerializeField] private float intoTheGround = 5f;
