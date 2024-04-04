@@ -5,60 +5,49 @@ using UnityEngine;
 public class UnitAI : MonoBehaviour
 {
     protected float checkRate = 1.0f;
-
     protected LayerMask unitLayerMask;
     protected LayerMask buildingLayerMask;
 
     protected Unit unit;
-    
-    
+
     // Start is called before the first frame update
     void Start()
     {
         InvokeRepeating("Check", 0.0f, checkRate);
         unitLayerMask = LayerMask.GetMask("Unit");
         buildingLayerMask = LayerMask.GetMask("Building");
-
         if (unit == null)
             unit = GetComponent<Unit>();
-
     }
 
     // Update is called once per frame
     void Update()
     {
-         
+
     }
-    
+
     // checks for nearby enemies with a sphere cast
     protected Unit CheckForNearbyEnemies()
     {
         RaycastHit[] hits = Physics.SphereCastAll(transform.position, unit.DefendRange, Vector3.up, unitLayerMask);
-
         GameObject closest = null;
         float closestDist = 0.0f;
-
         for (int x = 0; x < hits.Length; x++)
         {
             //Debug.Log("Test - " + hits[x].collider.gameObject.ToString());
             Unit target = hits[x].collider.GetComponent<Unit>();
-
             // skip if this is not a unit or if it is a corpse
             if ((target == null) || (target.CurHP <= 0))
                 continue;
-
             // skip if this is myself
             if (hits[x].collider.gameObject == gameObject)
                 continue;
-
             // skip if it is a natural unit
             if (target.Faction == null)
                 continue;
-
             // is this a team mate?
             else if (unit.Faction.IsMyUnit(target))
                 continue;
-
             // if it is not the closest enemy or the distance is less than the closest distance it currently has
             else if (!closest || (Vector3.Distance(transform.position, hits[x].transform.position) < closestDist))
             {
@@ -66,6 +55,7 @@ public class UnitAI : MonoBehaviour
                 closestDist = Vector3.Distance(transform.position, hits[x].transform.position);
             }
         }
+
         if (closest != null)
         {
             //Debug.Log(closest.gameObject.ToString() + ", " + closestDist.ToString());
@@ -74,36 +64,28 @@ public class UnitAI : MonoBehaviour
         else
             return null;
     }
-    
+
     protected void Check()
     {
         if (unit.CurHP <= 0 || unit.State == UnitState.Die)
             return;
-        {
-            if (unit.CurHP <= 0)
-                return;
-        }
-        
-        if (!unit.IsWorker && !unit.IsBuilder)// if a unit is a fighter
+        if (!unit.IsWorker && !unit.IsBuilder) // if a unit is a fighter
         {
             // check if we have nearby enemies - if so, attack them
             if (unit.State != UnitState.AttackUnit && unit.State != UnitState.MoveToEnemy)
             {
                 Unit enemy = CheckForNearbyEnemies(); //check if we have nearby enemies 
-
                 if (enemy != null) //if so, attack them
                 {
                     unit.ToAttackUnit(enemy);
                 }
-
-                else //if there is no enemy unit left
+                else
                 {
-                    //check if we have nearby enemy building
-                    Building potialEnemyBuilding = CheckForNearbyEnemyBuildings();
+                    Building potentialEnemyBuilding = CheckForNearbyEnemyBuildings();
 
-                    if (potialEnemyBuilding != null)
+                    if (potentialEnemyBuilding != null)
                     {
-                        unit.ToAttackBuilding(potialEnemyBuilding);
+                        unit.ToAttackBuilding(potentialEnemyBuilding);
                     }
                 }
             }
@@ -122,7 +104,7 @@ public class UnitAI : MonoBehaviour
         {
             //Debug.Log("Test - " + hits[x].collider.gameObject.ToString());
             Building target = hits[x].collider.GetComponent<Building>();
-// skip if this is not a building or destroyed
+            // skip if this is not a building or destroyed
             if ((target == null) || (target.CurHP <= 0))
                 continue;
 
@@ -151,3 +133,4 @@ public class UnitAI : MonoBehaviour
             return null;
     }
 }
+ 
