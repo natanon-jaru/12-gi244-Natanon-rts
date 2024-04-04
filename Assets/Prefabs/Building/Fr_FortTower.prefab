@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8787564004717607632}
   - component: {fileID: 2581504615725109536}
   m_Layer: 7
-  m_Name: FortTower
+  m_Name: Fr_FortTower
   m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
