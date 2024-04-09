@@ -122,6 +122,8 @@ MonoBehaviour:
   curUnitWaitTime: 0
   isFuctional: 1
   isHQ: 0
+  isHousing: 1
+  isBarrack: 0
   intoTheGround: 5
 --- !u!54 &31377863511775893
 Rigidbody:

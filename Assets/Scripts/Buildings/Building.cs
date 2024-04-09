@@ -56,9 +56,6 @@ public class Building : Structure
     {
         if (Input.GetKeyDown(KeyCode.G))
             ToCreateUnit(0);
-        
-        if (Input.GetKeyDown(KeyCode.H))
-            ToCreateUnit(1);
 
         if ((recruitList.Count > 0) && (recruitList[0] != null))
         {
@@ -70,7 +67,7 @@ public class Building : Structure
                 curUnitProgress++;
                 unitTimer = 0f;
 
-                if (curUnitProgress >= 100)
+                if (curUnitProgress >= 100 && (faction.AliveUnits.Count < faction.UnitLimit))
                 {
                     curUnitProgress = 0;
                     curUnitWaitTime = 0f;
@@ -150,4 +147,18 @@ public class Building : Structure
         }
         return num;
     }
+    
+    protected override void Die()
+    {
+        if (faction != null)
+            faction.AliveBuildings.Remove(this);
+
+        if (IsHousing)
+            faction.UpdateHousingLimit();
+
+        base.Die();
+
+        //Check Victory Condition
+    }
+
 }
