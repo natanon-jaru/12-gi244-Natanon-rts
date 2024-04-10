@@ -612,6 +612,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110795860}
   m_CullTransparentMesh: 1
+--- !u!1001 &167344920
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1439479408}
+    m_Modifications:
+    - target: {fileID: 1452130660160706, guid: 886bf65c9976fde4c99dc245fce253cc, type: 3}
+      propertyPath: m_Name
+      value: TreeApple (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4678838047887218, guid: 886bf65c9976fde4c99dc245fce253cc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 16.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4678838047887218, guid: 886bf65c9976fde4c99dc245fce253cc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.436132
+      objectReference: {fileID: 0}
+    - target: {fileID: 4678838047887218, guid: 886bf65c9976fde4c99dc245fce253cc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 49.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4678838047887218, guid: 886bf65c9976fde4c99dc245fce253cc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4678838047887218, guid: 886bf65c9976fde4c99dc245fce253cc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4678838047887218, guid: 886bf65c9976fde4c99dc245fce253cc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4678838047887218, guid: 886bf65c9976fde4c99dc245fce253cc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4678838047887218, guid: 886bf65c9976fde4c99dc245fce253cc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4678838047887218, guid: 886bf65c9976fde4c99dc245fce253cc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4678838047887218, guid: 886bf65c9976fde4c99dc245fce253cc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 886bf65c9976fde4c99dc245fce253cc, type: 3}
 --- !u!1001 &192375283
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -662,7 +719,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3187586684623871518, guid: db8a35cb70145d74688c69ed5cfdf5ce, type: 3}
       propertyPath: unitPrefabs.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3187586684623871518, guid: db8a35cb70145d74688c69ed5cfdf5ce, type: 3}
       propertyPath: unitPrefabs.Array.data[0]
@@ -6733,7 +6790,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1439479408}
   m_Layer: 0
-  m_Name: TreeApple
+  m_Name: FoodTreeApple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6753,6 +6810,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 712601642}
+  - {fileID: 1655959077}
   m_Father: {fileID: 1259607721}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1443423021 stripped
@@ -7784,6 +7842,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1633007954}
   m_CullTransparentMesh: 1
+--- !u!4 &1655959077 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4678838047887218, guid: 886bf65c9976fde4c99dc245fce253cc, type: 3}
+  m_PrefabInstance: {fileID: 167344920}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1698803948
 GameObject:
   m_ObjectHideFlags: 0
@@ -8239,7 +8302,7 @@ MonoBehaviour:
   weightMultiplier: 1
   timePassed: 0
   rangeFromStartPos: 30
---- !u!114 &1773925516
+--- !u!114 &1773925519
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10141,7 +10204,7 @@ PrefabInstance:
       addedObject: {fileID: 1773925515}
     - targetCorrespondingSourceObject: {fileID: 344286425824651580, guid: 8c7cf36792ef70a4ba2763ccd263788f, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1773925516}
+      addedObject: {fileID: 1773925519}
   m_SourcePrefab: {fileID: 100100000, guid: 8c7cf36792ef70a4ba2763ccd263788f, type: 3}
 --- !u!1001 &2126160940
 PrefabInstance:

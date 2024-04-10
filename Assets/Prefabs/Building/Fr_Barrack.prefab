@@ -60,8 +60,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 809920961174369033}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.9999639, z: -0, w: 0.008507956}
-  m_LocalPosition: {x: 0.3, y: 0, z: -0.0000005628837}
+  m_LocalRotation: {x: 0.0003868987, y: 0.002871901, z: -0.0000034018067, w: -0.9999958}
+  m_LocalPosition: {x: 0.30452535, y: 0.0003106594, z: 0.8028897}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -70,7 +70,7 @@ Transform:
   - {fileID: 8711901957183689027}
   - {fileID: 7748813852388969275}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -179.025, z: 0}
+  m_LocalEulerAnglesHint: {x: -0.044, y: -360.329, z: 0.001}
 --- !u!208 &-5059301236290080083
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   structureName: Barrack
-  structurePic: {fileID: 21300000, guid: 3d99a83f20277f04498116489835ba3c, type: 3}
+  structurePic: {fileID: 21300000, guid: 925fd3488a839cc4cbe3802e9f4ac24a, type: 3}
   curHP: 0
   maxHP: 100
   faction: {fileID: 0}
@@ -114,7 +114,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 5088875289857812374}
   rallyPoint: {fileID: 8711901957183689027}
   unitPrefabs:
-  - {fileID: 1659822698518960, guid: 412bdc8a5a4df6142a07d1838deb4096, type: 3}
+  - {fileID: 5086161515245163366, guid: 5dd5dbb79fe55b649ad594aeb67a6427, type: 3}
   recruitList: []
   unitTimer: 0
   curUnitProgress: 0

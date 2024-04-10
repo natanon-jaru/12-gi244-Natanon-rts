@@ -11,24 +11,19 @@ public class AIController : MonoBehaviour
 
     private AISupport AiSupport;
     private List<AIBehaviour> AIs = new List<AIBehaviour>();
-    
     [SerializeField]
     private AIBehaviour bestAI;
 
     [SerializeField]
     private float bestAiValue;
-    
-    // Start is called before the first frame update
+
     void Start()
     {
         AiSupport = GetComponent<AISupport>();
 
         foreach (AIBehaviour ai in GetComponents<AIBehaviour>())
             AIs.Add(ai);
-
     }
-
-    // Update is called once per frame
     void Update()
     {
         waited += Time.deltaTime;
@@ -52,7 +47,8 @@ public class AIController : MonoBehaviour
             float aiValue = ai.GetWeight() * ai.WeightMultiplier + Random.Range(0, randomRate);
 
             if (aiValue > bestAiValue)
-            {bestAiValue = aiValue;
+            {
+                bestAiValue = aiValue;
 
                 //Debug.Log(bestAiValue);
 
@@ -65,4 +61,5 @@ public class AIController : MonoBehaviour
 
         waited = 0;
     }
+
 }

@@ -12,8 +12,6 @@ public abstract class AIBehaviour : MonoBehaviour
 
     public abstract float GetWeight();
     public abstract void Execute();
-
-    
     // Start is called before the first frame update
     void Start()
     {

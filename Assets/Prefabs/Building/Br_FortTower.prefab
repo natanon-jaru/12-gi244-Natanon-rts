@@ -28,15 +28,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 809920961174369033}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.9999639, z: -0, w: 0.008507956}
-  m_LocalPosition: {x: 0.3, y: 0, z: -0.0000005628837}
+  m_LocalRotation: {x: -0, y: -0.049564045, z: -0, w: 0.99877095}
+  m_LocalPosition: {x: 0.30000055, y: 0, z: -0.0000014418385}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3888995409545559819}
   - {fileID: 7748813852388969275}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -179.025, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -5.682, z: 0}
 --- !u!208 &-5059301236290080083
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -134,6 +134,8 @@ MonoBehaviour:
   curUnitWaitTime: 0
   isFuctional: 1
   isHQ: 0
+  isHousing: 0
+  isBarrack: 0
   intoTheGround: 5
   unitLayerMask:
     serializedVersion: 2

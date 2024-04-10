@@ -12,22 +12,22 @@ public class AISupport : MonoBehaviour
 
     [SerializeField] private List<GameObject> workers = new List<GameObject>(); //worker
     public List<GameObject> Workers { get { return workers; } }
-
-    [SerializeField] private List<GameObject> hq = new List<GameObject>(); //worker
+    [SerializeField] private List<GameObject> hq = new List<GameObject>();
     public List<GameObject> HQ { get { return hq; } }
-
-    [SerializeField] private List<GameObject> houses = new List<GameObject>(); //worker
+    [SerializeField] private List<GameObject> houses = new List<GameObject>();
     public List<GameObject> Houses { get { return houses; } }
-    
-    [SerializeField] private List<GameObject> barracks = new List<GameObject>(); //worker
+    [SerializeField] private List<GameObject> barracks = new List<GameObject>();
     public List<GameObject> Barracks { get { return barracks; } }
-
-    
     [SerializeField] private Faction faction;
     public Faction Faction { get { return faction; } }
-    
+
+    private void Awake()
+    {
+        faction = GetComponent<Faction>();
+    }
+
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
         faction = GetComponent<Faction>();
     }
@@ -37,6 +37,7 @@ public class AISupport : MonoBehaviour
     {
         
     }
+    
     public void Refresh()
     {
         fighters.Clear();
@@ -64,16 +65,18 @@ public class AISupport : MonoBehaviour
 
         foreach (Building b in faction.AliveBuildings)
         {
-            if (b==null)
-            continue;
+            if (b == null)
+                continue;
 
-            if (b.IsHQ)
-            hq.Add(b.gameObject);
+            if (b.IsHQ) //if it is a builder
+                hq.Add(b.gameObject);
 
-            if (b.IsHousing)
-            houses.Add(b.gameObject);
+            if (b.IsHousing) //if it is a worker
+                houses.Add(b.gameObject);
+
+            if (b.IsBarrack)
+                barracks.Add(b.gameObject);
         }
     }
-    
 
 }

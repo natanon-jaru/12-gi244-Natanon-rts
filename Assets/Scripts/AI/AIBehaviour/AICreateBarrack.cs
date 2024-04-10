@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class AICreateBarrack : AICreateHQ
 {
-    // Start is called before the first frame update
     void Start()
     {
         support = gameObject.GetComponent<AISupport>();
@@ -18,7 +17,6 @@ public class AICreateBarrack : AICreateHQ
     {
         
     }
-    
     private bool CheckIfAnyUnfinishedHouseAndBarrack()
     {
         foreach (GameObject houseObj in support.Houses)
@@ -54,4 +52,5 @@ public class AICreateBarrack : AICreateHQ
 
         return 0;
     }
+
 }
