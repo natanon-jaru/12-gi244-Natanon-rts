@@ -216,7 +216,19 @@ MonoBehaviour:
   selectionVisual: {fileID: 3641353247442843529}
   onRsrcQuantityChange:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8599260917791654167}
+        m_TargetAssemblyTypeName: ResourceUI, Assembly-CSharp
+        m_MethodName: OnQuantityChange
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onInfoQuantityChange:
     m_PersistentCalls:
       m_Calls: []
@@ -275,19 +287,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3097203957816659357, guid: ebe4134c7aefdb644bd7f394711f0024, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: -0.011370533
       objectReference: {fileID: 0}
     - target: {fileID: 3097203957816659357, guid: ebe4134c7aefdb644bd7f394711f0024, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: -0.00470983
       objectReference: {fileID: 0}
     - target: {fileID: 3097203957816659357, guid: ebe4134c7aefdb644bd7f394711f0024, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.9238095
       objectReference: {fileID: 0}
     - target: {fileID: 3097203957816659357, guid: ebe4134c7aefdb644bd7f394711f0024, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -0.3826545
       objectReference: {fileID: 0}
     - target: {fileID: 3097203957816659357, guid: ebe4134c7aefdb644bd7f394711f0024, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -309,6 +321,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5834821303589585501, guid: ebe4134c7aefdb644bd7f394711f0024, type: 3}
+      propertyPath: resource
+      value: 
+      objectReference: {fileID: 8249515413347077056}
     - target: {fileID: 7199533254633585498, guid: ebe4134c7aefdb644bd7f394711f0024, type: 3}
       propertyPath: m_Name
       value: ResourceUI
@@ -323,6 +339,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3097203957816659357, guid: ebe4134c7aefdb644bd7f394711f0024, type: 3}
   m_PrefabInstance: {fileID: 2859721106263753546}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8599260917791654167 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5834821303589585501, guid: ebe4134c7aefdb644bd7f394711f0024, type: 3}
+  m_PrefabInstance: {fileID: 2859721106263753546}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89fe97f47360c0c47995baeee5f41bb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5145055903224411894
 PrefabInstance:
   m_ObjectHideFlags: 0
