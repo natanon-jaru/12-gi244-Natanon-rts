@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 4756999040285985411}
   - component: {fileID: 3979185694088244165}
   - component: {fileID: 8420657678079613353}
-  - component: {fileID: 5834821303589585501}
-  m_Layer: 9
+  - component: {fileID: 8890442513571009172}
+  m_Layer: 5
   m_Name: ResourceUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7199533254633585498}
-  m_LocalRotation: {x: -0.00470983, y: 0.9238095, z: -0.3826545, w: -0.011370533}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_ConstrainProportionsScale: 0
@@ -86,7 +86,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &3979185694088244165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de7da2a1c04b1ce4196861a272426014, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5834821303589585501
+--- !u!114 &8890442513571009172
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -125,11 +125,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7199533254633585498}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89fe97f47360c0c47995baeee5f41bb0, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c19aa03392dbd941b3923c5142d1d25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   resourceText: {fileID: 1364115632722001410}
-  resource: {fileID: 8249515413347077056, guid: 32877ce16c96e2e47a6f056f0523e977, type: 3}
+  resource: {fileID: 0}
 --- !u!1 &8593744109549459015
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,7 +141,7 @@ GameObject:
   - component: {fileID: 7565628642146384907}
   - component: {fileID: 751726200255511259}
   - component: {fileID: 1364115632722001410}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

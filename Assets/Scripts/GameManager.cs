@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     void Awake()
     {
         instance = this;
-        SetupPlayers(Settings.mySide, Settings.EnemySide);
+        SetupPlayers(Settings.mySide,Settings.EnemySide);
     }
 
     // Start is called before the first frame update

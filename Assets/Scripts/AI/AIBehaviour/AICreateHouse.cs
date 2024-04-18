@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class AICreateHouse : AICreateHQ
 {
-    // Start is called before the first frame update
     void Start()
     {
         support = gameObject.GetComponent<AISupport>();
@@ -13,12 +12,6 @@ public class AICreateHouse : AICreateHQ
         buildingGhostPrefab = support.Faction.GhostBuildingPrefabs[1];
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    
     private bool CheckIfAnyUnfinishedHouse()
     {
         foreach (GameObject houseObj in support.Houses)
@@ -30,7 +23,6 @@ public class AICreateHouse : AICreateHQ
         }
         return false;
     }
-    
     public override float GetWeight()
     {
         Building b = buildingPrefab.GetComponent<Building>();
@@ -52,5 +44,5 @@ public class AICreateHouse : AICreateHQ
 
         return 0;
     }
-    
+
 }

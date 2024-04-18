@@ -49,6 +49,8 @@ public class ResourceSource : MonoBehaviour
     void Start()
     {
        onRsrcQuantityChange.Invoke();
+       //onRsrcQuantityChange.AddListener(delegate { InfoManager.instance.ShowAllInfo(this); });
+       //onRsrcQuantityChange.AddListener((() => InfoManager.instance.ShowAllInfo(this)));
     }
 
     // Update is called once per frame

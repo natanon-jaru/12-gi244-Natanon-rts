@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1992257315217916840}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Component
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 31377863511775893}
   - component: {fileID: 8787564004717607632}
   - component: {fileID: 8115534612530725167}
-  m_Layer: 7
+  m_Layer: 2
   m_Name: Br_Barrack_Ghost
   m_TagString: Building
   m_Icon: {fileID: 0}
@@ -161,7 +161,7 @@ GameObject:
   - component: {fileID: 2379975956129877696}
   - component: {fileID: 3721595554941859047}
   - component: {fileID: 7105544600658969655}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -263,6 +263,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1992257315217916840}
     m_Modifications:
+    - target: {fileID: 148076, guid: 4ccb1c3bf907ef74b92d63c996c095f6, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 148076, guid: 4ccb1c3bf907ef74b92d63c996c095f6, type: 3}
       propertyPath: m_IsActive
       value: 1

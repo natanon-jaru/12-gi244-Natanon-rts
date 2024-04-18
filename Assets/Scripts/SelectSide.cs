@@ -8,12 +8,12 @@ public class SelectSide : MonoBehaviour
     [SerializeField] private string mainMenuScene;
     [SerializeField] private string chooseMapScene;
 
-    public void BackToMainMenu()
+    public void backToMainMenu()
     {
         SceneManager.LoadScene(mainMenuScene);
     }
 
-    public void GotoChooseMap()
+    private void gotoChooseMap()
     {
         SceneManager.LoadScene(chooseMapScene);
     }
@@ -21,6 +21,6 @@ public class SelectSide : MonoBehaviour
     public void ChooseSide(int i)
     {
         Settings.SelectSide(i);
-        GotoChooseMap();
+        gotoChooseMap();
     }
 }

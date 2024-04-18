@@ -1821,7 +1821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
-  unitName: Builder
+  unitName: Fr_Builder
   unitPic: {fileID: 21300000, guid: 9f6bfa58a20cacd41832cc7324ac7129, type: 3}
   curHP: 100
   maxHP: 100
@@ -1866,13 +1866,15 @@ MonoBehaviour:
   toBuild: 0
   showGhost: 0
   buildingList:
-  - {fileID: 2875728194703374582, guid: db8a35cb70145d74688c69ed5cfdf5ce, type: 3}
-  - {fileID: 809920961174369033, guid: ef5e8fd6db3abc745982ec8a56d1f24f, type: 3}
-  - {fileID: 809920961174369033, guid: 48e660db0e117e2418597e3d72fac9fa, type: 3}
+  - {fileID: 2875728194703374582, guid: d4979e68c5b1b9d48aab373591553e23, type: 3}
+  - {fileID: 809920961174369033, guid: ad188cca14978584c91566dfa2335d10, type: 3}
+  - {fileID: 809920961174369033, guid: 7f98cd8447418ff4a992cae89828f488, type: 3}
+  - {fileID: 809920961174369033, guid: c7d7d9296d58a9440b0db69fad9509ed, type: 3}
   ghostBuildingList:
-  - {fileID: 2875728194703374582, guid: ecc7d6965f4c54245beccf34d67868ac, type: 3}
-  - {fileID: 809920961174369033, guid: 31df110131a45bd44b9b6e2ac9e5258d, type: 3}
-  - {fileID: 809920961174369033, guid: 41a1a9524dd3e6642bac96da5140d1c1, type: 3}
+  - {fileID: 2875728194703374582, guid: 0f4e01ea0b40ef74fb3522a83fa4a48f, type: 3}
+  - {fileID: 809920961174369033, guid: 6c6acd47c891e2f4b86d132ac12beb9b, type: 3}
+  - {fileID: 809920961174369033, guid: d59dda9615880d2468e012bd38694c6f, type: 3}
+  - {fileID: 809920961174369033, guid: 862c828a1bd193448b198a02e813d677, type: 3}
   newBuilding: {fileID: 0}
   ghostBuilding: {fileID: 0}
   inProgressBuilding: {fileID: 0}
