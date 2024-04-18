@@ -4172,6 +4172,7 @@ GameObject:
   - component: {fileID: 4376472813492621031}
   - component: {fileID: -6571604758546785325}
   - component: {fileID: -3811302125784932685}
+  - component: {fileID: 3968934605059643766}
   m_Layer: 6
   m_Name: Soldier
   m_TagString: Unit
@@ -4363,7 +4364,7 @@ MonoBehaviour:
   minWpnDamage: 0
   maxWpnDamage: 12
   armour: 1
-  visualRange: 20
+  visualRange: 60
   weaponRange: 15
   state: 0
   faction: {fileID: 0}
@@ -4395,6 +4396,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd838e06bb4c30a4db8055d1e392ac11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3968934605059643766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659822698518960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c09873f6ba0aea4e967368d101f65d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1685525561228416
