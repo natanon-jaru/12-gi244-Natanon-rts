@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8575603107059846315}
   - component: {fileID: 9044423048199356685}
   m_Layer: 9
-  m_Name: Rock
+  m_Name: Gold
   m_TagString: Resource
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,15 +30,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 175060}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0.87232155, z: -0, w: 0.48893267}
+  m_LocalPosition: {x: -0.00000253993, y: 0, z: 0.0000014236174}
+  m_LocalScale: {x: 0.89393, y: 0.89393, z: 0.89393}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7482269791250602643}
   - {fileID: 3510160779223742356}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -121.459, z: 0}
 --- !u!33 &3336442
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -67,7 +67,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5e1235b2e417983469723d36f05de88d, type: 2}
+  - {fileID: 2100000, guid: bec8ec8c3f26f2747a024a033d1f380c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -123,9 +123,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 091df85fea124ca47864b978f6439cc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rsrcName: Rock
+  rsrcName: Gold
   rsrcPic: {fileID: 0}
-  rsrcType: 3
+  rsrcType: 2
   quantity: 100
   maxQuantity: 100
   selectionVisual: {fileID: 1507303322986769936}
@@ -239,19 +239,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3097203957816659357, guid: ebe4134c7aefdb644bd7f394711f0024, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.45171487
       objectReference: {fileID: 0}
     - target: {fileID: 3097203957816659357, guid: ebe4134c7aefdb644bd7f394711f0024, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0.18710645
       objectReference: {fileID: 0}
     - target: {fileID: 3097203957816659357, guid: ebe4134c7aefdb644bd7f394711f0024, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.80592
       objectReference: {fileID: 0}
     - target: {fileID: 3097203957816659357, guid: ebe4134c7aefdb644bd7f394711f0024, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -0.33382303
       objectReference: {fileID: 0}
     - target: {fileID: 3097203957816659357, guid: ebe4134c7aefdb644bd7f394711f0024, type: 3}
       propertyPath: m_AnchoredPosition.x
