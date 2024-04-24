@@ -124,7 +124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rsrcName: Gold
-  rsrcPic: {fileID: 0}
+  rsrcPic: {fileID: 21300000, guid: fa79a4e29783b8742b0712869efd94c7, type: 3}
   rsrcType: 2
   quantity: 100
   maxQuantity: 100
@@ -239,19 +239,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3097203957816659357, guid: ebe4134c7aefdb644bd7f394711f0024, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.45171487
+      value: 0.48893267
       objectReference: {fileID: 0}
     - target: {fileID: 3097203957816659357, guid: ebe4134c7aefdb644bd7f394711f0024, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.18710645
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3097203957816659357, guid: ebe4134c7aefdb644bd7f394711f0024, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.80592
+      value: 0.87232155
       objectReference: {fileID: 0}
     - target: {fileID: 3097203957816659357, guid: ebe4134c7aefdb644bd7f394711f0024, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.33382303
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3097203957816659357, guid: ebe4134c7aefdb644bd7f394711f0024, type: 3}
       propertyPath: m_AnchoredPosition.x

@@ -124,7 +124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rsrcName: Rock
-  rsrcPic: {fileID: 0}
+  rsrcPic: {fileID: 21300000, guid: 2420758578e9fe245bb28a1356154aee, type: 3}
   rsrcType: 3
   quantity: 100
   maxQuantity: 100
