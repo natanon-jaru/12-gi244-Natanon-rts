@@ -9,6 +9,7 @@ TagManager:
   - Ground
   - Resource
   - GhostBuilding
+  - Heal
   layers:
   - Default
   - TransparentFX

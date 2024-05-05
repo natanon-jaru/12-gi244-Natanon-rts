@@ -406,4 +406,12 @@ public class Unit : MonoBehaviour
             ToAttackTurret(turret); //counter-attack at turret
     }
 
+    private void OnTriggerEnter(Collider Heal)
+    {
+        if (Heal.tag == "Heal")
+        {
+            CurHP +=10;
+            Destroy(Heal.gameObject);
+        }
+    }
 }
